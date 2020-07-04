@@ -17,7 +17,7 @@ $ composer require zhengbingdong/easy-qq-info
 ```
 use Zhengbingdong\EasyQqInfo\GetInfo;
 
-#测试QQ号码
+#测试QQ号码-1
 $qq = '704150769';
 
 $info = GetInfo::get($aa); 
