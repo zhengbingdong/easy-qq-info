@@ -23,7 +23,7 @@ class GeInfo{
 			return $data;
 		}
 
-		$url = 'https://api.oioweb.cn/api/qq.php?qq='.$qq;
+		$url = 'http://api.qianduanwang.vip/api/doc/get?qq='.$qq;
 
 		$info = self::httpGet($url);
 
