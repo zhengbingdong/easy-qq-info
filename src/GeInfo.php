@@ -52,7 +52,7 @@ class GeInfo{
 	 * @return mixed
 	 * @throws Exception
 	 */
-	public static function httpGet()
+	public static function httpGet($url)
 	{
 
 	    //初始化一个 cURL 对象
