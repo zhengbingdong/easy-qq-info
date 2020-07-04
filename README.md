@@ -13,13 +13,12 @@
 $ composer require zhengbingdong/easy-qq-info
 ```
 
-phpstudy重写：
+## 用法
 ```
-<IfModule mod_rewrite.c>
-Options +FollowSymlinks -Multiviews
-RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ index.php [L,E=PATH_INFO:$1]
-</IfModule>
+use Zhengbingdong\EasyQqInfo\GetInfo;
+
+#QQ号码
+$qq = '704150769';
+
+$info = GetInfo::get($aa); 
 ```
