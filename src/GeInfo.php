@@ -16,30 +16,24 @@ class GeInfo{
 			'data' => '',
 			'msg'  => ''
 		);
-
 		if(trim($qq) == ''){
 			$data['msg'] = '请输入您要解析的QQ号';
 
 			return $data;
 		}
-
 		$url = 'http://api.qianduanwang.vip/api/doc/get?qq='.$qq;
-
 		$info = self::httpGet($url);
-
 		$info = json_decode($info, true);
 
 		if($info['code'] == 1){
+			$data['msg'] = $info['message'];
 			
+		} else{
 			$data['code'] = 0;
 			$data['data'] = array(
-				'imgurl' => $info['imgurl'],
-				'name' => $info['name'],
+				'imgurl' => $info['data']['imgurl'],
+				'name' => $info['data']['name'],
 			);
-
-		} else{
-			
-			$data['msg'] = '不存在该QQ号码';
 		}
 
 		return $data;
