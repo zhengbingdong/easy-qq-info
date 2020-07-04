@@ -1,0 +1,18 @@
+{
+    "name": "zhengbingdong/easy-qq-info",
+    "description": "非QQ授权的情况下，根据QQ号码解析出QQ昵称与QQ头像地址",
+    "type": "library",
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zhengbingdong\\EasyQqInfo\\": "src"
+        }
+    },
+    "license": "MIT",
+    "authors": [{
+        "name": "zhengbingdong",
+        "email": "1529903642@qq.com"
+    }]
+}
